@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import GamertagListItem from "./components/GamertagListItem";
 
 function App() {
+  const gamertagList = [
+    { accountId: "Playstation 4", gamertag: "Schmaltzy" },
+    { accountId: "Xbox", gamertag: "somethingElse" },
+    { accountId: "battle.net", gamertag: "also something else" },
+    { accountId: "test", gamertag: "reeeee" },
+    { accountId: "test2", gamertag: "normies" }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Gamertags:
+      <ul className="app_gamertag-list">
+        {gamertagList.map((gamertag) => (
+          <GamertagListItem
+            accountId={gamertag.accountId}
+            gamertag={gamertag.gamertag}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
