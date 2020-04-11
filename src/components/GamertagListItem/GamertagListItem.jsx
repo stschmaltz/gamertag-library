@@ -12,8 +12,8 @@ const GamertagListItem = ({ accountId, gamertag }) => {
 };
 
 GamertagListItem.propTypes = {
-  accountId: PropTypes.string,
-  gamertag: PropTypes.string,
+  accountId: PropTypes.string.isRequired,
+  gamertag: PropTypes.string.isRequired,
 };
 
 export default GamertagListItem;
