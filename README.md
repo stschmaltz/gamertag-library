@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application to allow users to store a library of gamertags to share with their friends. Making it easier to connect digitally with new and old friends! 
+
+A project between me and my brother. 
 
 ## Available Scripts
 
